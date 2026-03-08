@@ -3,7 +3,7 @@
     "name": "GestionIES",
     "slug": "GestionIES",
     "version": "1.0.0",
-    "package": "com.gestionies.app",
+    "package": "com.jlgomez.GestionIES",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -30,6 +30,12 @@
       "expo-router",
       "expo-secure-store",
       "expo-sqlite"
-    ]
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "153dab4f-1944-4cac-97b0-6725aa4bd235"
+      }
+    }
   }
 }
