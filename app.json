@@ -3,6 +3,7 @@
     "name": "GestionIES",
     "slug": "GestionIES",
     "version": "1.0.0",
+    "package": "com.gestionies.app",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",

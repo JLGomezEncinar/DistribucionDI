@@ -1,5 +1,5 @@
 import { Platform } from 'react-native';
-import * as SQLite from 'expo-sqlite';
+
 
 const DB_NAME = 'empleados.db';
 const WEB_STORAGE_KEY = 'tabla_empleados';
@@ -50,6 +50,7 @@ export const dbQuery = async (sql, params = []) => {
 
     } else {
         // --- LÓGICA PARA MÓVIL (SQLite Nativo) ---
+        const SQLite = require('expo-sqlite');
         const db = await SQLite.openDatabaseAsync(DB_NAME);
 
         if (sql.toUpperCase().startsWith('SELECT')) {
