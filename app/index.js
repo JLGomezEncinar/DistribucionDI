@@ -52,18 +52,20 @@ export default function LoginPage() {
       />
       <TextInput
         placeholder="Email"
+        placeholderTextColor={isDarkMode ? '#aaa' : '#666'}
         onChangeText={setCorreo}
         value={correo}
-        style={styles.input}
+        style={[styles.input, { color: theme.text }]}
         autoCapitalize="none"
         keyboardType="email-address"
       />
       <TextInput
         placeholder="Contraseña"
+        placeholderTextColor={isDarkMode ? '#aaa' : '#666'}
         secureTextEntry
         onChangeText={setPassword}
         value={password}
-        style={styles.input}
+        style={[styles.input, { color: theme.text }]}
       />
       <Button title="Iniciar Sesión" onPress={handleLogin} />
     </View>
