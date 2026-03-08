@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { Platform } from 'react-native';
-import * as SQLite from 'expo-sqlite';
+
 import { getToken, saveToken, deleteToken } from './authService';
 import { dbQuery } from '../databaseAdapter';
 
@@ -44,6 +44,7 @@ export function AuthProvider({ children }) {
 
     // Configuración inicial de SQLite (Crea la tabla si no existe)
     const initializeDatabase = async () => {
+        const SQLite = require('expo-sqlite');
         const db = await SQLite.openDatabaseAsync(DB_NAME);
         await db.execAsync(`
             PRAGMA journal_mode = WAL;

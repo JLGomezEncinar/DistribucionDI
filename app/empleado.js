@@ -3,7 +3,7 @@ import { Text, StyleSheet, FlatList, View, Pressable, Image, Button, ActivityInd
 import { useRouter } from 'expo-router';
 import { Platform } from 'react-native';
 import { dbQuery } from '../databaseAdapter';
-import * as SQLite from 'expo-sqlite';
+
 
 const Empleado = () => {
   const [empleados, setEmpleados] = useState([]);

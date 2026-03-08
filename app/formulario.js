@@ -5,7 +5,6 @@ import { useRouter } from 'expo-router';
 import { Picker } from '@react-native-picker/picker';
 import { useAuth } from './authContext';
 import { dbQuery } from '../databaseAdapter';
-import * as SQLite from 'expo-sqlite';
 export default function LoginScreen() {
   const router = useRouter();
   const {  isLoading, isAuthenticated, logout} = useAuth();
